@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewController.ScheduleController">
+    <children>
+        <Label alignment="CENTER" layoutX="18.0" layoutY="43.0" prefHeight="29.0" prefWidth="766.0" text="Reports By Week or Month" underline="true">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Button layoutY="4.0" mnemonicParsing="false" onAction="#backBtnPressed" text="Return" />
+        <TableView fx:id="apptsTV" layoutY="225.0" prefHeight="369.0" prefWidth="802.0">
+            <columns>
+                <TableColumn fx:id="apptIdCol" prefWidth="32.86029863357544" text="ID" />
+                <TableColumn fx:id="titleCol" prefWidth="99.27128601074219" text="Title" />
+                <TableColumn fx:id="descriptionCol" prefWidth="129.1164093017578" text="Description" />
+                <TableColumn fx:id="locationCol" prefWidth="83.58151245117188" text="Location" />
+                <TableColumn fx:id="contactIdCol" prefWidth="92.75201416015625" text="Contact" />
+                <TableColumn fx:id="typeCol" prefWidth="89.06979370117188" text="Type" />
+                <TableColumn fx:id="startCol" prefWidth="99.2945556640625" text="Start" />
+                <TableColumn fx:id="endCol" prefWidth="96.70538330078125" text="End" />
+                <TableColumn fx:id="customerIdCol" prefWidth="74.70562744140625" text="Customer ID" />
+            </columns>
+        </TableView>
+        <RadioButton fx:id="thisWeekSchedule" layoutX="316.0" layoutY="136.0" mnemonicParsing="false" text="Get Appointments for Week" />
+        <RadioButton fx:id="thisMonthSchedule" layoutX="560.0" layoutY="136.0" mnemonicParsing="false" text="Get Appointments for Month" />
+        <RadioButton fx:id="allAppts" layoutX="103.0" layoutY="136.0" mnemonicParsing="false" text="Get All Appointments" />
+        <Label fx:id="userIdTxt" layoutX="757.0" layoutY="6.0" prefHeight="17.0" prefWidth="60.0" />
+    </children>
+</AnchorPane>

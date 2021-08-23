@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="421.0" prefWidth="679.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewController.ReportsController">
+    <children>
+        <Label alignment="CENTER" layoutX="64.0" layoutY="23.0" prefHeight="29.0" prefWidth="565.0" text="Reports" underline="true">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="userIdText" layoutX="629.0" layoutY="6.0" prefHeight="17.0" prefWidth="63.0" />
+        <Button layoutY="2.0" mnemonicParsing="false" onAction="#backBtnPressed" text="Return" />
+        <RadioButton fx:id="apptsByTypeRB" layoutX="68.0" layoutY="287.0" mnemonicParsing="false" text="Total number of customer appointments by type" />
+        <RadioButton fx:id="apptsByMonthRB" layoutX="68.0" layoutY="314.0" mnemonicParsing="false" text="Total number of customer appointments by month" />
+        <RadioButton fx:id="contactSchedulesRB" layoutX="408.0" layoutY="287.0" mnemonicParsing="false" text="Schedule for each contact" />
+        <RadioButton fx:id="customersAddedRB" layoutX="408.0" layoutY="314.0" mnemonicParsing="false" text="Number of customers added this month" />
+        <TextArea fx:id="txtArea" editable="false" layoutX="56.0" layoutY="78.0" prefHeight="178.0" prefWidth="582.0" />
+    </children>
+</AnchorPane>
