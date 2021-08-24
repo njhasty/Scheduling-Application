@@ -16,7 +16,7 @@ Please use the attachment “Locale Codes for Region and Language” to review d
 Your company also supplies a list of contacts, which are prepopulated in the Contacts table; however, administrative functions such as adding users are beyond the scope of the application and done by your company’s IT support staff. 
 Your application should be organized logically using one or more design patterns and generously commented using Javadoc so your code can be read and maintained by other programmers.
 
-By Nicholas Hasty | Nicholas.hasty1@gmail.com | PRFA — QAM1 | 2 July 2021
+By Nicholas Hasty | Nicholas.hasty1@gmail.com | 2 July 2021
 
 IntelliJ IDEA 2020.3 (Community Edition)
 Build #IC-203.5981.155, built on November 30, 2020
